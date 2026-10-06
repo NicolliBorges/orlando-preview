@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orlando Tattoo Shop — desde 1988 em São José dos Campos (prévia Kodra)</title>
+<meta name="description" content="Prévia de site criada pela Kodra para o Orlando Tattoo Shop — tatuagem, piercing, curso e material para tattoo no Centro de São José dos Campos, desde 1988.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preload" href="assets/pirata.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="img/selo.webp" as="image">
+<style>
+@font-face{font-family:"Pirata";src:url(assets/pirata.woff) format("woff");font-display:swap}
+@font-face{font-family:"Oswald";src:url(assets/oswald-medium.woff) format("woff");font-weight:500;font-display:swap}
+@font-face{font-family:"Archivo";src:url(assets/archivo-regular.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Archivo";src:url(assets/archivo-semibold.woff) format("woff");font-weight:600;font-display:swap}
+:root{--bk:#0a0a0a;--bk2:#151515;--yl:#f6d21a;--wh:#f4f1ea;--gr:#9a968c;--line:rgba(244,241,234,.16);--strip:34px;--gut:clamp(18px,4.4vw,70px);
+  --goth:"Pirata","Georgia",serif;--cond:"Oswald","Arial Narrow",sans-serif;--body:"Archivo",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--bk)}
+body{margin:0;background:var(--bk);color:var(--wh);font-family:var(--body);font-size:17px;line-height:1.55;padding-top:var(--strip);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,figure,blockquote,ul{margin:0;padding:0}
+ul{list-style:none}
+::selection{background:var(--yl);color:#000}
+main{overflow-x:clip}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-stopped{overflow:clip}
+.kodra{position:fixed;inset:0 0 auto 0;height:var(--strip);z-index:90;background:var(--yl);color:#000;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 var(--gut);font-family:var(--cond);font-weight:500;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.kodra a{text-decoration:none;opacity:.7}
+.kodra a:hover{opacity:1}
+.lab{font-family:var(--cond);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--yl)}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 26px;background:var(--yl);color:#000;border:2px solid var(--yl);font-family:var(--cond);font-weight:500;font-size:16px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .25s,color .25s}
+.btn:hover{background:transparent;color:var(--yl)}
+.btn--line{background:transparent;color:var(--wh);border-color:var(--wh)}
+.btn--line:hover{background:var(--wh);color:#000}
+
+/* topo */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px var(--gut)}
+.top__logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--goth);font-size:26px;line-height:1}
+.top__logo img{width:44px;height:44px}
+.nav{display:flex;gap:clamp(14px,2.4vw,36px);align-items:center}
+.nav a{font-family:var(--cond);font-weight:500;font-size:14px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+.nav a:hover{color:var(--yl)}
+
+/* hero */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(18px,4vw,60px);align-items:center;padding:clamp(10px,3vh,40px) var(--gut) clamp(30px,5vw,70px)}
+.hero h1{font-family:var(--goth);font-weight:400;font-size:clamp(84px,min(17vw,31svh),300px);line-height:.8;letter-spacing:.005em}
+.hero h1 span{display:block}
+.hero h1 small{display:block;font-family:var(--cond);font-weight:500;font-size:.2em;letter-spacing:.34em;text-transform:uppercase;color:var(--yl);margin-top:.5em;line-height:1}
+.hero__lede{max-width:40ch;font-size:clamp(17px,1.5vw,21px);margin:clamp(18px,2.6vw,34px) 0 clamp(18px,2.4vw,28px);color:#d8d4ca}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px}
+.seal{position:relative;width:min(100%,400px);aspect-ratio:1;justify-self:center}
+.seal img{position:absolute;inset:14%;width:72%;height:72%;border-radius:50%}
+.seal svg{position:absolute;inset:0;width:100%;height:100%}
+.seal text{font-family:var(--cond);font-weight:500;font-size:15.5px;letter-spacing:.3em;fill:var(--yl);text-transform:uppercase}
+.years{display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,3vw,44px);align-items:center;margin:0 var(--gut);padding:clamp(18px,2.4vw,30px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.years b{font-family:var(--goth);font-weight:400;font-size:clamp(84px,13vw,210px);line-height:.8;color:var(--yl)}
+.years p{font-size:clamp(18px,2vw,30px);line-height:1.25;max-width:26ch;font-family:var(--cond);font-weight:500;text-transform:uppercase;letter-spacing:.04em}
+.years p span{color:var(--gr)}
+
+.tick{overflow:hidden;background:var(--yl);color:#000;margin-top:clamp(40px,6vw,80px);transform:rotate(-1.2deg) scale(1.03)}
+.tick div{display:flex;width:max-content;font-family:var(--cond);font-weight:500;font-size:clamp(20px,2.6vw,36px);letter-spacing:.1em;text-transform:uppercase;padding:10px 0;will-change:transform}
+.tick span{padding:0 .7em;white-space:nowrap}
+.tick span::after{content:"✦";margin-left:1.4em}
+
+/* loja */
+.shop{padding:clamp(60px,9vw,130px) var(--gut) 0;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(20px,4vw,60px);align-items:end}
+.shop figure{position:relative;overflow:hidden}
+.shop figure img{width:100%;height:100%;object-fit:cover}
+.shop__a{aspect-ratio:3/2}
+.shop__b{aspect-ratio:4/3;margin-bottom:clamp(0px,6vw,90px)}
+.shop figcaption{position:absolute;left:0;bottom:0;background:var(--yl);color:#000;font-family:var(--cond);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px}
+.shop__txt{grid-column:1 / -1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(30px,5vw,60px)}
+.svc{background:var(--bk);padding:clamp(18px,2.2vw,30px)}
+.svc h3{font-family:var(--goth);font-weight:400;font-size:clamp(30px,3vw,44px);line-height:1;color:var(--yl);margin-bottom:10px}
+.svc p{font-size:15.5px;color:#cfcbc1}
+
+/* mapa da orelha */
+.ear{position:relative;height:330vh;margin-top:clamp(60px,9vw,130px)}
+.ear__stick{position:sticky;top:var(--strip);height:calc(100svh - var(--strip));display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(20px,5vw,90px);align-items:center;padding:0 var(--gut);overflow:hidden;background:radial-gradient(ellipse at 30% 50%,#1d1b12 0,var(--bk) 62%)}
+.ear svg{display:block;height:min(80svh,680px);width:auto;max-width:100%;justify-self:end;overflow:visible}
+.ear .ol{fill:none;stroke:var(--wh);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+.ear .in{fill:none;stroke:rgba(244,241,234,.5);stroke-width:2.2;stroke-linecap:round}
+.jw circle.g{fill:var(--yl)}
+.jw circle.h{fill:none;stroke:var(--yl);stroke-width:1.4;opacity:.55}
+.jw path{stroke:var(--yl);stroke-width:1.6;stroke-linecap:round}
+.ear h2{font-family:var(--goth);font-weight:400;font-size:clamp(44px,6vw,100px);line-height:.9;margin:12px 0 clamp(14px,2vh,26px)}
+.ear h2 em{font-style:normal;color:var(--yl)}
+.spots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;border-top:1px solid var(--line)}
+.spots li{display:flex;align-items:baseline;gap:12px;padding:clamp(7px,1.2vh,12px) 0;border-bottom:1px solid var(--line);font-family:var(--cond);font-weight:500;font-size:clamp(17px,1.7vw,24px);letter-spacing:.06em;text-transform:uppercase;color:#6f6c64;transition:color .35s;cursor:pointer}
+.spots li i{font-style:normal;font-size:12px;letter-spacing:.14em;color:inherit;min-width:2em}
+.spots li.on{color:var(--wh)}
+.spots li.on i{color:var(--yl)}
+.ear__more{margin-top:clamp(12px,2vh,22px);font-size:15.5px;color:#cfcbc1;max-width:52ch}
+.ear__more b{color:var(--wh);font-weight:600}
+
+/* piercing fotos */
+.pier{padding:clamp(60px,9vw,130px) var(--gut) 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(16px,2.4vw,36px);align-items:start}
+.pier figure{position:relative}
+.pier .ph{overflow:hidden}
+.pier img{width:100%;height:100%;object-fit:cover}
+.pier figcaption{padding-top:12px;font-size:15.5px;color:#cfcbc1}
+.pier figcaption b{display:block;font-family:var(--cond);font-weight:500;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--yl);margin-bottom:4px}
+.p1{grid-column:1 / span 4}.p1 .ph{aspect-ratio:9/15}
+.p2{grid-column:5 / span 4;margin-top:clamp(20px,6vw,90px)}.p2 .ph{aspect-ratio:3/4}
+.p3{grid-column:9 / span 4}
+.p3 h2{font-family:var(--goth);font-weight:400;font-size:clamp(40px,4.8vw,80px);line-height:.92;margin:10px 0 16px}
+.p3 ul{border-top:1px solid var(--line);margin:18px 0 22px}
+.p3 li{padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
+
+/* tattoo */
+.tat{margin-top:clamp(60px,9vw,130px);background:var(--yl);color:#000;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:stretch}
+.tat figure{position:relative;min-height:60vh;overflow:hidden}
+.tat figure img{position:absolute;inset:0;width:100%;height:112%;object-fit:cover;object-position:50% 30%}
+.tat div{padding:clamp(34px,6vw,100px) var(--gut) clamp(34px,6vw,100px) clamp(24px,5vw,80px);align-self:center}
+.tat .lab{color:#000}
+.tat h2{font-family:var(--goth);font-weight:400;font-size:clamp(50px,8vw,140px);line-height:.84;margin:12px 0 20px}
+.tat p{max-width:42ch;font-size:clamp(17px,1.5vw,21px)}
+.tat .btn{margin-top:24px;background:#000;border-color:#000;color:var(--yl)}
+.tat .btn:hover{background:transparent;color:#000}
+
+/* avaliações */
+.rev{padding:clamp(60px,9vw,130px) var(--gut) 0}
+.rev__head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:clamp(20px,3vw,40px)}
+.rev h2,.quote h2{font-family:var(--goth);font-weight:400;font-size:clamp(46px,7vw,120px);line-height:.88}
+.rev__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.rv{background:var(--bk);padding:clamp(20px,2.6vw,36px)}
+.rv blockquote{font-size:clamp(17px,1.5vw,20px);line-height:1.5}
+.rv cite{display:block;margin-top:14px;font-style:normal}
+
+/* orçamento */
+.quote{padding:clamp(60px,9vw,130px) var(--gut) clamp(40px,6vw,80px)}
+.quote h2 em{font-style:normal;color:var(--yl)}
+.quote > p{max-width:50ch;margin:14px 0 clamp(22px,3vw,40px);color:#cfcbc1}
+.mode{display:inline-flex;border:2px solid var(--yl);margin-bottom:8px}
+.mode label{cursor:pointer}
+.mode input{position:absolute;opacity:0;pointer-events:none}
+.mode span{display:block;padding:12px 26px;font-family:var(--cond);font-weight:500;font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--yl);transition:background .2s,color .2s}
+.mode input:checked + span{background:var(--yl);color:#000}
+.mode input:focus-visible + span{outline:2px solid var(--wh);outline-offset:2px}
+.form{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4.4fr);gap:clamp(22px,5vw,80px);align-items:start}
+.q{padding:18px 0;border-top:1px solid var(--line)}
+.q[hidden]{display:none}
+.q > span,.q > label{display:block;font-family:var(--cond);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gr);margin-bottom:12px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{cursor:pointer}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:block;padding:9px 15px;border:1.5px solid rgba(244,241,234,.34);font-size:15.5px;line-height:1.2;transition:background .2s,color .2s,border-color .2s}
+.opts label:hover span{border-color:var(--yl)}
+.opts input:checked + span{background:var(--yl);color:#000;border-color:var(--yl)}
+.opts input:focus-visible + span{outline:2px solid var(--wh);outline-offset:2px}
+.q textarea{width:100%;min-height:84px;resize:vertical;border:1.5px solid rgba(244,241,234,.34);background:none;font:400 16px/1.5 var(--body);color:var(--wh);padding:12px 14px;outline:none;border-radius:0}
+.q textarea:focus{border-color:var(--yl)}
+.ticket{position:sticky;top:calc(var(--strip) + 22px);border:2px solid var(--yl);padding:20px 20px 22px}
+.ticket pre{margin:10px 0 18px;font:400 15.5px/1.55 var(--body);white-space:pre-wrap;word-break:break-word;min-height:130px}
+.ticket .btn{width:100%;justify-content:space-between}
+.ticket small{display:block;margin-top:12px;font-size:13px;color:var(--gr)}
+
+.foot{border-top:1px solid var(--line);margin:0 var(--gut);padding:clamp(30px,4vw,56px) 0 30px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.foot .lab{display:block;margin-bottom:8px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--yl)}
+.foot__k{grid-column:1 / -1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--gr)}
+.fab{position:fixed;right:12px;bottom:12px;z-index:80;display:none;transform:translateY(100px);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.fab.on{transform:none}
+
+@media (max-width:759px){
+  body{font-size:16px}
+  .kodra{justify-content:center;font-size:10.5px;letter-spacing:.08em}
+  .kodra a{display:none}
+  .nav a:not(.btn){display:none}
+  .nav .btn{padding:9px 14px;font-size:13px}
+  .top__logo{font-size:22px}
+  .hero{grid-template-columns:1fr}
+  .hero h1{font-size:27vw}
+  .seal{width:70%;order:-1;justify-self:start;margin-bottom:6px;display:none}
+  .years{grid-template-columns:1fr;gap:10px}
+  .shop{grid-template-columns:1fr}
+  .shop__b{margin-bottom:0;width:78%;justify-self:end}
+  .shop__txt{grid-template-columns:1fr 1fr}
+  .ear{height:auto}
+  .ear__stick{position:relative;top:0;height:auto;grid-template-columns:1fr;padding-top:50px;padding-bottom:50px;gap:22px}
+  .ear svg{height:auto;width:min(74%,320px);justify-self:center}
+  .spots{grid-template-columns:1fr 1fr;gap:0 16px}
+  .pier{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .p1,.p2{grid-column:auto;margin-top:0}
+  .p3{grid-column:1 / -1}
+  .tat{grid-template-columns:1fr}
+  .tat figure{min-height:0;aspect-ratio:4/5}
+  .rev__grid{grid-template-columns:1fr}
+  .form{grid-template-columns:1fr}
+  .ticket{position:static}
+  .foot{grid-template-columns:1fr 1fr}
+  .fab{display:inline-flex}
+}
+</style>
+</head>
+<body>
+<div class="kodra"><span>Prévia criada pela Kodra para Orlando Tattoo Shop</span><a href="https://kodratecnologia.com.br" target="_blank" rel="noopener">kodratecnologia.com.br ↗</a></div>
+
+<header class="top">
+  <a class="top__logo" href="#topo"><img src="img/selo.webp" width="640" height="640" alt="">Orlando Tattoo</a>
+  <nav class="nav" aria-label="Seções"><a href="#loja">A loja</a><a href="#piercing">Piercing</a><a href="#tattoo">Tattoo</a><a href="#avaliacoes">Avaliações</a><a class="btn" href="#orcamento">Orçamento</a></nav>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div>
+      <h1><span data-t>Orlando</span><span data-t>Tattoo</span><small data-in>Shop · Centro · São José dos Campos</small></h1>
+      <p class="hero__lede" data-in>Tatuagem, piercing, curso e material para tattoo na loja preta da Marechal Floriano. No Vale do Paraíba desde 1988.</p>
+      <div class="hero__cta" data-in><a class="btn" href="#orcamento">Pedir orçamento</a><a class="btn btn--line" href="#piercing">Ver perfurações</a></div>
+    </div>
+    <div class="seal" aria-hidden="true">
+      <svg viewBox="0 0 400 400" id="ring"><defs><path id="circ" d="M200 200 m-182 0 a182 182 0 1 1 364 0 a182 182 0 1 1 -364 0"/></defs><text><textPath href="#circ">Desde 1988 ✦ 38 anos de tradição ✦ Tatuagem ✦ Piercing ✦ Material p/ tattoo ✦ </textPath></text></svg>
+      <img src="img/selo.webp" width="640" height="640" alt="">
+    </div>
+  </section>
+
+  <div class="years">
+    <b id="anos">38</b>
+    <p>anos de tradição. <span>De 1988 até hoje, de portas abertas todos os dias da semana.</span></p>
+  </div>
+
+  <div class="tick" aria-hidden="true"><div id="tick"><span>Tatuagem</span><span>Piercing</span><span>Material p/ tattoo</span><span>Curso de tattoo e piercing</span><span>Desde 1988</span><span>Tatuagem</span><span>Piercing</span><span>Material p/ tattoo</span><span>Curso de tattoo e piercing</span><span>Desde 1988</span><span>Tatuagem</span><span>Piercing</span><span>Material p/ tattoo</span><span>Curso de tattoo e piercing</span><span>Desde 1988</span></div></div>
+
+  <section class="shop" id="loja">
+    <figure class="shop__a" data-rev><img src="img/equipe.webp" width="1600" height="1067" loading="lazy" alt="Equipe do Orlando Tattoo Shop no sofá de couro da loja, com lustre e vitrines ao fundo"><figcaption>Por dentro da loja</figcaption></figure>
+    <figure class="shop__b" data-rev><img src="img/fachada.webp" width="1000" height="750" loading="lazy" alt="Fachada preta do Orlando Tattoo com a equipe na calçada"><figcaption>A loja preta · Centro</figcaption></figure>
+    <div class="shop__txt">
+      <div class="svc" data-up><h3>Tatuagem</h3><p>Do traço ao realismo, com o profissional Orlando e a equipe da casa. Agenda e orçamento pelo WhatsApp.</p></div>
+      <div class="svc" data-up><h3>Piercing</h3><p>Perfurações em aço cirúrgico e titânio, correção de lóbulo, microdermal e perfuração baby em titânio.</p></div>
+      <div class="svc" data-up><h3>Curso</h3><p>Curso de tattoo e curso de piercing. Pergunte pela próxima turma no WhatsApp.</p></div>
+      <div class="svc" data-up><h3>Material</h3><p>Venda de material para tattoo e de joias para piercing.</p></div>
+    </div>
+  </section>
+
+  <section class="ear" id="piercing" aria-label="Mapa de perfurações na orelha">
+    <div class="ear__stick">
+      <svg viewBox="0 0 300 430" role="img" aria-label="Desenho de uma orelha com os pontos de perfuração">
+        <path class="ol" id="e1" d="M200 40C176 20 120 18 84 46 44 78 30 150 40 226c6 44 36 70 56 110 14 28 26 68 64 68s56-32 48-68c-4-20-2-38 12-48 24-16 30-48 10-64-12-10-16-20-10-36 10-28 28-64 20-100-4-22-18-40-40-48z"/>
+        <path class="in" id="e2" d="M196 66C150 44 96 62 76 110 56 160 64 232 96 282"/>
+        <path class="in" id="e3" d="M214 110c-38 2-74 40-76 86-2 40 22 66 58 66"/>
+        <path class="in" id="e4" d="M170 122c-20-22-44-26-62-14"/>
+        <path class="in" id="e5" d="M206 172c-22-2-36 18-32 42 4 20 22 26 34 18"/>
+        <path class="in" id="e6" d="M226 226c-12 10-14 26-4 36"/>
+        <g class="jw" data-j="0" transform="translate(57 132)"><circle class="h" r="13"/><circle class="g" r="6.5"/><path d="M-20 0h-9M20 0h9M0-20v-9M0 20v9"/></g>
+        <g class="jw" data-j="1" transform="translate(228 98)"><circle class="h" r="13"/><circle class="g" r="6.5"/><path d="M-20 0h-9M20 0h9M0-20v-9M0 20v9"/></g>
+        <g class="jw" data-j="2" transform="translate(118 152)"><circle class="h" r="13"/><circle class="g" r="6.5"/><path d="M-20 0h-9M20 0h9M0-20v-9M0 20v9"/></g>
+        <g class="jw" data-j="3" transform="translate(50 226)"><circle class="h" r="13"/><circle class="g" r="6.5"/><path d="M-20 0h-9M20 0h9M0-20v-9M0 20v9"/></g>
+        <g class="jw" data-j="4" transform="translate(190 206)"><circle class="h" r="13"/><circle class="g" r="6.5"/><path d="M-20 0h-9M20 0h9M0-20v-9M0 20v9"/></g>
+        <g class="jw" data-j="5" transform="translate(236 246)"><circle class="h" r="13"/><circle class="g" r="6.5"/><path d="M-20 0h-9M20 0h9M0-20v-9M0 20v9"/></g>
+        <g class="jw" data-j="6" transform="translate(204 182)"><circle class="h" r="13"/><circle class="g" r="6.5"/><path d="M-20 0h-9M20 0h9M0-20v-9M0 20v9"/></g>
+        <g class="jw" data-j="7" transform="translate(160 370)"><circle class="h" r="13"/><circle class="g" r="6.5"/><path d="M-20 0h-9M20 0h9M0-20v-9M0 20v9"/></g>
+      </svg>
+      <div>
+        <span class="lab">Piercing · orelha</span>
+        <h2>Onde vai o <em>brilho?</em></h2>
+        <ul class="spots" id="spots">
+          <li data-s="Hélix"><i>01</i>Hélix</li>
+          <li data-s="Forward hélix"><i>02</i>Forward hélix</li>
+          <li data-s="Flat"><i>03</i>Flat</li>
+          <li data-s="Mid hélix"><i>04</i>Mid hélix</li>
+          <li data-s="Conch"><i>05</i>Conch</li>
+          <li data-s="Trágus"><i>06</i>Trágus</li>
+          <li data-s="Daith"><i>07</i>Daith</li>
+          <li data-s="Lóbulo"><i>08</i>Lóbulo</li>
+        </ul>
+        <p class="ear__more"><b>Também na casa:</b> vertical labret, labret, medusa, língua, sobrancelha, monroe, umbigo, mamilo e nostril. Atendimento por ordem de chegada.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pier">
+    <figure class="p1" data-up><div class="ph"><img src="img/lobulo.webp" width="640" height="1136" loading="lazy" alt="Antes e depois de uma correção de lóbulo com três perfurações alinhadas"></div><figcaption><b>Correção de lóbulo</b>“Orelhinhas renovadas ✨✨” — feito pela profissional Kelly.</figcaption></figure>
+    <figure class="p2" data-up><div class="ph"><img src="img/conch.webp" width="960" height="1280" loading="lazy" alt="Três argolas cravejadas em titânio para conch"></div><figcaption><b>Titânio</b>“Para o Conch, joias em titânio ✨”</figcaption></figure>
+    <div class="p3" data-up>
+      <span class="lab">Cuidado de quem faz isso há 38 anos</span>
+      <h2>Joia certa, mão leve.</h2>
+      <p>Joias básicas em aço cirúrgico, opções em titânio e joias em titânio gold. A Kelly acompanha você na escolha, na perfuração e no retorno.</p>
+      <ul><li>Perfuração baby em titânio</li><li>Correção de lóbulo</li><li>Microdermal: aplicação e remoção</li><li>Alargador</li><li>Remoção de joias para exames</li></ul>
+      <a class="btn" href="#orcamento" data-mode="piercing">Quero furar</a>
+    </div>
+  </section>
+
+  <section class="tat" id="tattoo">
+    <figure><img src="img/leoa.webp" width="960" height="1280" loading="lazy" alt="Tatuagem em realismo de uma leoa com meio rosto de mulher, no ombro" data-par></figure>
+    <div>
+      <span class="lab">Tatuagem</span>
+      <h2>Feita pelo Orlando.</h2>
+      <p>“Tattoo realizada pelo profissional Orlando. 38 anos de tradição, desde 1988.” Traz a sua ideia, a referência ou só a vontade: o desenho sai daqui.</p>
+      <a class="btn" href="#orcamento" data-mode="tattoo">Orçar minha tattoo</a>
+    </div>
+  </section>
+
+  <section class="rev" id="avaliacoes">
+    <div class="rev__head"><h2>Quem passou<br>pela loja</h2><a class="lab" href="https://www.google.com/maps/search/?api=1&query=Orlando+Tattoo+Shop+S%C3%A3o+Jos%C3%A9+dos+Campos" target="_blank" rel="noopener">Avaliações no Google ↗</a></div>
+    <div class="rev__grid">
+      <article class="rv" data-up><blockquote>“Sensacional! Eles são impecáveis, na higiene, esterilização, tudo mega cuidado, é visível!”</blockquote><cite class="lab">Erbert Mainardi</cite></article>
+      <article class="rv" data-up><blockquote>“Atendimento maravilhoso. Saio de Santa Isabel só pra fazer piercing com a Kelly.”</blockquote><cite class="lab">Andressa Gatti</cite></article>
+      <article class="rv" data-up><blockquote>“[…] é super organizado, limpo e esterilizado […] É um lugar que eu tenho confiança e super indico.”</blockquote><cite class="lab">Madu Diniz</cite></article>
+    </div>
+  </section>
+
+  <section class="quote" id="orcamento">
+    <h2>Orça<em>mento</em></h2>
+    <p>Marca o que você quer e a mensagem chega pronta no WhatsApp da loja.</p>
+    <form id="form" novalidate>
+      <div class="mode" role="radiogroup" aria-label="Tipo de serviço">
+        <label><input type="radio" name="modo" value="tattoo" checked><span>Tatuagem</span></label>
+        <label><input type="radio" name="modo" value="piercing"><span>Piercing</span></label>
+      </div>
+      <div class="form">
+        <div>
+          <div class="q" data-for="tattoo"><span>Estilo</span>
+            <div class="opts" role="radiogroup" aria-label="Estilo">
+              <label><input type="radio" name="estilo" value="Realismo" checked><span>Realismo</span></label>
+              <label><input type="radio" name="estilo" value="Preto e cinza"><span>Preto e cinza</span></label>
+              <label><input type="radio" name="estilo" value="Colorida"><span>Colorida</span></label>
+              <label><input type="radio" name="estilo" value="Escrita"><span>Escrita</span></label>
+              <label><input type="radio" name="estilo" value="Ainda não sei"><span>Ainda não sei</span></label>
+            </div>
+          </div>
+          <div class="q" data-for="tattoo"><span>Local do corpo</span>
+            <div class="opts" role="radiogroup" aria-label="Local do corpo">
+              <label><input type="radio" name="local" value="Braço" checked><span>Braço</span></label>
+              <label><input type="radio" name="local" value="Ombro"><span>Ombro</span></label>
+              <label><input type="radio" name="local" value="Peito"><span>Peito</span></label>
+              <label><input type="radio" name="local" value="Pescoço"><span>Pescoço</span></label>
+              <label><input type="radio" name="local" value="Costas"><span>Costas</span></label>
+              <label><input type="radio" name="local" value="Perna"><span>Perna</span></label>
+              <label><input type="radio" name="local" value="Outro lugar"><span>Outro lugar</span></label>
+            </div>
+          </div>
+          <div class="q" data-for="tattoo"><span>Tamanho</span>
+            <div class="opts" role="radiogroup" aria-label="Tamanho">
+              <label><input type="radio" name="tam" value="Pequena (até 10 cm)"><span>Até 10 cm</span></label>
+              <label><input type="radio" name="tam" value="Média (10 a 20 cm)" checked><span>10 a 20 cm</span></label>
+              <label><input type="radio" name="tam" value="Grande (mais de 20 cm)"><span>Mais de 20 cm</span></label>
+            </div>
+          </div>
+          <div class="q" data-for="piercing" hidden><span>Onde</span>
+            <div class="opts" role="radiogroup" aria-label="Local da perfuração">
+              <label><input type="radio" name="furo" value="Hélix" checked><span>Hélix</span></label>
+              <label><input type="radio" name="furo" value="Forward hélix"><span>Forward hélix</span></label>
+              <label><input type="radio" name="furo" value="Flat"><span>Flat</span></label>
+              <label><input type="radio" name="furo" value="Mid hélix"><span>Mid hélix</span></label>
+              <label><input type="radio" name="furo" value="Conch"><span>Conch</span></label>
+              <label><input type="radio" name="furo" value="Trágus"><span>Trágus</span></label>
+              <label><input type="radio" name="furo" value="Daith"><span>Daith</span></label>
+              <label><input type="radio" name="furo" value="Lóbulo"><span>Lóbulo</span></label>
+              <label><input type="radio" name="furo" value="Nostril"><span>Nostril</span></label>
+              <label><input type="radio" name="furo" value="Umbigo"><span>Umbigo</span></label>
+              <label><input type="radio" name="furo" value="Outro lugar"><span>Outro lugar</span></label>
+            </div>
+          </div>
+          <div class="q" data-for="piercing" hidden><span>Joia</span>
+            <div class="opts" role="radiogroup" aria-label="Material da joia">
+              <label><input type="radio" name="joia" value="Aço cirúrgico" checked><span>Aço cirúrgico</span></label>
+              <label><input type="radio" name="joia" value="Titânio"><span>Titânio</span></label>
+              <label><input type="radio" name="joia" value="Quero ver as opções"><span>Quero ver as opções</span></label>
+            </div>
+          </div>
+          <div class="q"><label for="ideia">Detalhes (opcional)</label>
+            <textarea id="ideia" placeholder="Conta a ideia, manda a dúvida…"></textarea>
+          </div>
+        </div>
+        <aside class="ticket">
+          <span class="lab">Sua mensagem</span>
+          <pre id="msg" aria-live="polite"></pre>
+          <a class="btn" id="send" href="https://wa.me/5512992554733" target="_blank" rel="noopener">Enviar no WhatsApp <span aria-hidden="true">→</span></a>
+          <small>Abre o WhatsApp da loja — (12) 99255-4733.</small>
+        </aside>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="foot">
+  <div><span class="lab">Loja</span><p>Av. Marechal Floriano Peixoto, 25<br>Centro · São José dos Campos/SP</p></div>
+  <div><span class="lab">Horário</span><p>Segunda a sexta, 8h às 20h<br>Sábado, 8h às 18h<br>Domingo, 10h às 14h</p></div>
+  <div><span class="lab">Contato</span><p><a href="https://wa.me/5512992554733" target="_blank" rel="noopener">(12) 99255-4733</a><br><a href="https://wa.me/5512992550393" target="_blank" rel="noopener">(12) 99255-0393</a><br><a href="https://www.instagram.com/orlandotattooshop/" target="_blank" rel="noopener">@orlandotattooshop</a></p></div>
+  <div><span class="lab">Mapa</span><p><a href="https://www.google.com/maps/search/?api=1&query=Orlando+Tattoo+Shop+S%C3%A3o+Jos%C3%A9+dos+Campos" target="_blank" rel="noopener">Abrir no Google Maps ↗</a></p></div>
+  <div class="foot__k"><span>Fotos e textos: Instagram @orlandotattooshop e perfil da loja no Google. Horário e avaliações: Google.</span><span>Prévia criada pela <a href="https://kodratecnologia.com.br" target="_blank" rel="noopener">Kodra</a></span></div>
+</footer>
+<a class="btn fab" id="fab" href="#orcamento">Orçamento</a>
+
+<script src="assets/gsap.min.js"></script>
+<script src="assets/ScrollTrigger.min.js"></script>
+<script src="assets/lenis.min.js"></script>
+<script>
+(function(){
+  var W='5512992554733';
+  var form=document.getElementById('form'),msg=document.getElementById('msg'),send=document.getElementById('send'),ideia=document.getElementById('ideia');
+  function val(n){var el=form.querySelector('input[name="'+n+'"]:checked');return el?el.value:''}
+  function update(){
+    var m=val('modo');
+    form.querySelectorAll('[data-for]').forEach(function(q){q.hidden=q.dataset.for!==m});
+    var lines=m==='tattoo'
+      ?['Olá! Vi o site do Orlando Tattoo e quero um orçamento de tatuagem.','','Estilo: '+val('estilo'),'Local do corpo: '+val('local'),'Tamanho: '+val('tam')]
+      :['Olá! Vi o site do Orlando Tattoo e quero fazer um piercing.','','Perfuração: '+val('furo'),'Joia: '+val('joia')];
+    if(ideia.value.trim()) lines.push('Detalhes: '+ideia.value.trim());
+    var t=lines.join('\n');msg.textContent=t;send.href='https://wa.me/'+W+'?text='+encodeURIComponent(t);
+  }
+  function setMode(m,furo){var r=form.querySelector('input[name="modo"][value="'+m+'"]');if(r)r.checked=true;if(furo){var f=form.querySelector('input[name="furo"][value="'+furo+'"]');if(f)f.checked=true}update()}
+  form.addEventListener('input',update);form.addEventListener('change',update);form.addEventListener('submit',function(e){e.preventDefault()});update();
+  document.querySelectorAll('[data-mode]').forEach(function(a){a.addEventListener('click',function(){setMode(a.dataset.mode)})});
+
+  var fab=document.getElementById('fab'),spots=document.querySelectorAll('#spots li'),jw=document.querySelectorAll('.jw');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function go(el){if(window.__lenis)window.__lenis.scrollTo(el,{offset:-34,duration:1.4});else window.scrollTo({top:el.getBoundingClientRect().top+scrollY-34,behavior:'smooth'})}
+  spots.forEach(function(li){li.addEventListener('click',function(){setMode('piercing',li.dataset.s);go(document.getElementById('orcamento'))})});
+  if(!window.gsap||!window.ScrollTrigger||reduce){fab.classList.add('on');spots.forEach(function(li){li.classList.add('on')});return}
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ignoreMobileResize:true});
+  if(window.Lenis){var lenis=window.__lenis=new Lenis({lerp:.1});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0)}
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var el=document.querySelector(a.getAttribute('href'));if(!el)return;e.preventDefault();go(el)})});
+
+  /* abertura */
+  gsap.set('[data-in]',{opacity:0,y:20});
+  gsap.timeline({delay:.1})
+    .from('[data-t]',{yPercent:70,opacity:0,duration:.9,ease:'power4.out',stagger:.12})
+    .to('[data-in]',{opacity:1,y:0,duration:.8,ease:'power2.out',stagger:.12},.5)
+    .from('.seal img',{scale:.4,opacity:0,rotate:-90,duration:1,ease:'back.out(1.5)'},.3)
+    .from('#ring',{opacity:0,duration:.8},.8);
+  gsap.to('#ring',{rotate:360,transformOrigin:'50% 50%',duration:40,ease:'none',repeat:-1});
+  gsap.to('#ring',{rotate:'+=220',ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  /* 1988 → hoje */
+  var anos=document.getElementById('anos'),c={v:0};
+  gsap.to(c,{v:38,duration:1.8,ease:'power2.out',onUpdate:function(){anos.textContent=Math.round(c.v)},scrollTrigger:{trigger:'.years',start:'top 88%',once:true}});
+  /* letreiro */
+  var tick=document.getElementById('tick'),tw=gsap.to(tick,{xPercent:-33.333,duration:26,ease:'none',repeat:-1});
+  ScrollTrigger.create({onUpdate:function(self){gsap.to(tw,{timeScale:1+Math.min(6,Math.abs(self.getVelocity())/350),duration:.3,overwrite:true});}});
+
+  gsap.utils.toArray('[data-rev]').forEach(function(el){
+    gsap.timeline({scrollTrigger:{trigger:el,start:'top 90%',once:true}})
+      .fromTo(el,{clipPath:'inset(0% 100% 0% 0%)'},{clipPath:'inset(0% 0% 0% 0%)',duration:1.1,ease:'power3.inOut'})
+      .fromTo(el.querySelector('img'),{scale:1.2},{scale:1,duration:1.5,ease:'power3.out'},0);
+  });
+  gsap.utils.toArray('[data-up]').forEach(function(el){gsap.fromTo(el,{opacity:0,y:34},{opacity:1,y:0,duration:.9,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 93%',once:true}})});
+  gsap.to('[data-par]',{yPercent:-9,ease:'none',scrollTrigger:{trigger:'.tat',start:'top bottom',end:'bottom top',scrub:true}});
+
+  /* mapa da orelha: o traço desenha, as joias entram uma a uma */
+  var lines=gsap.utils.toArray('.ear .ol, .ear .in');
+  lines.forEach(function(p){var L=p.getTotalLength();gsap.set(p,{strokeDasharray:L,strokeDashoffset:L})});
+  gsap.set(jw,{scale:0,transformOrigin:'50% 50%',opacity:0});
+  var mm=gsap.matchMedia();
+  function build(st){
+    var tl=gsap.timeline({defaults:{ease:'none'},scrollTrigger:st});
+    tl.to(lines,{strokeDashoffset:0,duration:1.6,stagger:.12},0);
+    jw.forEach(function(g,i){
+      var t=1.5+i*.8;
+      tl.to(g,{scale:1,opacity:1,duration:.35,ease:'back.out(3)'},t)
+        .fromTo(g.querySelector('.h'),{attr:{r:6}},{attr:{r:13},duration:.5},t)
+        .call(function(){spots.forEach(function(li,k){li.classList.toggle('on',k<=i)})},null,t+.05)
+        .call(function(){spots.forEach(function(li,k){li.classList.toggle('on',k<i)})},null,t-.02);
+    });
+    tl.to({}, {duration:.8});
+    return tl;
+  }
+  mm.add('(min-width:760px)',function(){build({trigger:'.ear',start:'top top',end:'bottom bottom',scrub:.5})});
+  mm.add('(max-width:759px)',function(){build({trigger:'.ear',start:'top 70%',end:'bottom 75%',scrub:.5})});
+
+  ScrollTrigger.create({trigger:'.shop',start:'top 60%',endTrigger:'#orcamento',end:'top 75%',onToggle:function(s){fab.classList.toggle('on',s.isActive)}});
+  window.addEventListener('load',function(){ScrollTrigger.refresh()});
+})();
+</script>
+</body>
+</html>
